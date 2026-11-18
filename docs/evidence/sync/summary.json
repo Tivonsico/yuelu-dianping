@@ -1,0 +1,914 @@
+[
+  {
+    "name": "sync-r1-c1",
+    "startedAt": "2026-11-18T10:19:15.236Z",
+    "count": 3000,
+    "concurrency": 1,
+    "users": 3000,
+    "durationMs": 44143.9935,
+    "requestQps": 67.95941558844241,
+    "accepted": 3000,
+    "acceptedQps": 67.95941558844241,
+    "businessRejects": 0,
+    "rejectReasons": {},
+    "httpErrors": 0,
+    "errorReasons": {},
+    "meanMs": 14.672830066666572,
+    "p50Ms": 14.501099999999497,
+    "p95Ms": 16.558099999998376,
+    "p99Ms": 18.48819999999978,
+    "mode": "sync",
+    "round": 1,
+    "drainMs": 3.9690999999947962,
+    "quiescenceMs": 18.869199999993725,
+    "timedOut": false,
+    "audit": {
+      "voucherId": 901001,
+      "orders": 3000,
+      "distinctUsers": 3000,
+      "duplicateUsers": 0,
+      "mysqlStock": 0,
+      "redisStock": 3000,
+      "reservedUsers": 0,
+      "streamPending": [
+        0,
+        null,
+        null,
+        null
+      ],
+      "streamGroups": [
+        [
+          "name",
+          "g1",
+          "consumers",
+          1,
+          "pending",
+          0,
+          "last-delivered-id",
+          "1794997012147-1",
+          "entries-read",
+          36500,
+          "lag",
+          0
+        ]
+      ],
+      "queues": [
+        {
+          "name": "hmdp.orders",
+          "messages": 0,
+          "ready": 0,
+          "unacked": 0,
+          "acked": 0,
+          "delivered": 0
+        },
+        {
+          "name": "hmdp.orders.dlq",
+          "messages": 0,
+          "ready": 0,
+          "unacked": 0,
+          "acked": 0,
+          "delivered": 0
+        }
+      ]
+    },
+    "observation": "SQL completion checked at 100ms polling intervals; durableQps is observed lower bound",
+    "durableQps": 67.95330573193881,
+    "consistent": true
+  },
+  {
+    "name": "sync-r1-c32",
+    "startedAt": "2026-11-18T10:19:59.437Z",
+    "count": 3000,
+    "concurrency": 32,
+    "users": 3000,
+    "durationMs": 18590.228400000007,
+    "requestQps": 161.37510177120785,
+    "accepted": 3000,
+    "acceptedQps": 161.37510177120785,
+    "businessRejects": 0,
+    "rejectReasons": {},
+    "httpErrors": 0,
+    "errorReasons": {},
+    "meanMs": 197.2876122333336,
+    "p50Ms": 196.40619999999763,
+    "p95Ms": 210.01170000000275,
+    "p99Ms": 230.6310999999987,
+    "mode": "sync",
+    "round": 1,
+    "drainMs": 4.079499999992549,
+    "quiescenceMs": 17.557199999995646,
+    "timedOut": false,
+    "audit": {
+      "voucherId": 901032,
+      "orders": 3000,
+      "distinctUsers": 3000,
+      "duplicateUsers": 0,
+      "mysqlStock": 0,
+      "redisStock": 3000,
+      "reservedUsers": 0,
+      "streamPending": [
+        0,
+        null,
+        null,
+        null
+      ],
+      "streamGroups": [
+        [
+          "name",
+          "g1",
+          "consumers",
+          1,
+          "pending",
+          0,
+          "last-delivered-id",
+          "1794997012147-1",
+          "entries-read",
+          36500,
+          "lag",
+          0
+        ]
+      ],
+      "queues": [
+        {
+          "name": "hmdp.orders",
+          "messages": 0,
+          "ready": 0,
+          "unacked": 0,
+          "acked": 0,
+          "delivered": 0
+        },
+        {
+          "name": "hmdp.orders.dlq",
+          "messages": 0,
+          "ready": 0,
+          "unacked": 0,
+          "acked": 0,
+          "delivered": 0
+        }
+      ]
+    },
+    "observation": "SQL completion checked at 100ms polling intervals; durableQps is observed lower bound",
+    "durableQps": 161.33969686497446,
+    "consistent": true
+  },
+  {
+    "name": "sync-r1-c128",
+    "startedAt": "2026-11-18T10:20:18.080Z",
+    "count": 3000,
+    "concurrency": 128,
+    "users": 3000,
+    "durationMs": 18494.334600000002,
+    "requestQps": 162.21183756456963,
+    "accepted": 3000,
+    "acceptedQps": 162.21183756456963,
+    "businessRejects": 0,
+    "rejectReasons": {},
+    "httpErrors": 0,
+    "errorReasons": {},
+    "meanMs": 772.4378907666656,
+    "p50Ms": 781.2071999999898,
+    "p95Ms": 823.1236999999965,
+    "p99Ms": 833.1635999999999,
+    "mode": "sync",
+    "round": 1,
+    "drainMs": 4.549299999998766,
+    "quiescenceMs": 19.785399999993388,
+    "timedOut": false,
+    "audit": {
+      "voucherId": 901128,
+      "orders": 3000,
+      "distinctUsers": 3000,
+      "duplicateUsers": 0,
+      "mysqlStock": 0,
+      "redisStock": 3000,
+      "reservedUsers": 0,
+      "streamPending": [
+        0,
+        null,
+        null,
+        null
+      ],
+      "streamGroups": [
+        [
+          "name",
+          "g1",
+          "consumers",
+          1,
+          "pending",
+          0,
+          "last-delivered-id",
+          "1794997012147-1",
+          "entries-read",
+          36500,
+          "lag",
+          0
+        ]
+      ],
+      "queues": [
+        {
+          "name": "hmdp.orders",
+          "messages": 0,
+          "ready": 0,
+          "unacked": 0,
+          "acked": 0,
+          "delivered": 0
+        },
+        {
+          "name": "hmdp.orders.dlq",
+          "messages": 0,
+          "ready": 0,
+          "unacked": 0,
+          "acked": 0,
+          "delivered": 0
+        }
+      ]
+    },
+    "observation": "SQL completion checked at 100ms polling intervals; durableQps is observed lower bound",
+    "durableQps": 162.1719459518312,
+    "consistent": true
+  },
+  {
+    "name": "sync-r1-c256",
+    "startedAt": "2026-11-18T10:20:36.636Z",
+    "count": 3000,
+    "concurrency": 256,
+    "users": 3000,
+    "durationMs": 18705.655900000012,
+    "requestQps": 160.37930003833748,
+    "accepted": 3000,
+    "acceptedQps": 160.37930003833748,
+    "businessRejects": 0,
+    "rejectReasons": {},
+    "httpErrors": 0,
+    "errorReasons": {},
+    "meanMs": 1528.8215926333348,
+    "p50Ms": 1579.352700000003,
+    "p95Ms": 1624.5641999999934,
+    "p99Ms": 1636.897299999997,
+    "mode": "sync",
+    "round": 1,
+    "drainMs": 4.059500000003027,
+    "quiescenceMs": 18.102899999998044,
+    "timedOut": false,
+    "audit": {
+      "voucherId": 901256,
+      "orders": 3000,
+      "distinctUsers": 3000,
+      "duplicateUsers": 0,
+      "mysqlStock": 0,
+      "redisStock": 3000,
+      "reservedUsers": 0,
+      "streamPending": [
+        0,
+        null,
+        null,
+        null
+      ],
+      "streamGroups": [
+        [
+          "name",
+          "g1",
+          "consumers",
+          1,
+          "pending",
+          0,
+          "last-delivered-id",
+          "1794997012147-1",
+          "entries-read",
+          36500,
+          "lag",
+          0
+        ]
+      ],
+      "queues": [
+        {
+          "name": "hmdp.orders",
+          "messages": 0,
+          "ready": 0,
+          "unacked": 0,
+          "acked": 0,
+          "delivered": 0
+        },
+        {
+          "name": "hmdp.orders.dlq",
+          "messages": 0,
+          "ready": 0,
+          "unacked": 0,
+          "acked": 0,
+          "delivered": 0
+        }
+      ]
+    },
+    "observation": "SQL completion checked at 100ms polling intervals; durableQps is observed lower bound",
+    "durableQps": 160.34450208686752,
+    "consistent": true
+  },
+  {
+    "name": "sync-r2-c1",
+    "startedAt": "2026-11-18T10:20:55.407Z",
+    "count": 3000,
+    "concurrency": 1,
+    "users": 3000,
+    "durationMs": 42636.3603,
+    "requestQps": 70.36247885352446,
+    "accepted": 3000,
+    "acceptedQps": 70.36247885352446,
+    "businessRejects": 0,
+    "rejectReasons": {},
+    "httpErrors": 0,
+    "errorReasons": {},
+    "meanMs": 14.180671566666666,
+    "p50Ms": 14.070999999996275,
+    "p95Ms": 16.06130000000121,
+    "p99Ms": 17.31569999999192,
+    "mode": "sync",
+    "round": 2,
+    "drainMs": 3.921200000011595,
+    "quiescenceMs": 16.339399999997113,
+    "timedOut": false,
+    "audit": {
+      "voucherId": 902001,
+      "orders": 3000,
+      "distinctUsers": 3000,
+      "duplicateUsers": 0,
+      "mysqlStock": 0,
+      "redisStock": 3000,
+      "reservedUsers": 0,
+      "streamPending": [
+        0,
+        null,
+        null,
+        null
+      ],
+      "streamGroups": [
+        [
+          "name",
+          "g1",
+          "consumers",
+          1,
+          "pending",
+          0,
+          "last-delivered-id",
+          "1794997012147-1",
+          "entries-read",
+          36500,
+          "lag",
+          0
+        ]
+      ],
+      "queues": [
+        {
+          "name": "hmdp.orders",
+          "messages": 0,
+          "ready": 0,
+          "unacked": 0,
+          "acked": 0,
+          "delivered": 0
+        },
+        {
+          "name": "hmdp.orders.dlq",
+          "messages": 0,
+          "ready": 0,
+          "unacked": 0,
+          "acked": 0,
+          "delivered": 0
+        }
+      ]
+    },
+    "observation": "SQL completion checked at 100ms polling intervals; durableQps is observed lower bound",
+    "durableQps": 70.35600832044223,
+    "consistent": true
+  },
+  {
+    "name": "sync-r2-c32",
+    "startedAt": "2026-11-18T10:21:38.094Z",
+    "count": 3000,
+    "concurrency": 32,
+    "users": 3000,
+    "durationMs": 18484.63949999999,
+    "requestQps": 162.29691685358546,
+    "accepted": 3000,
+    "acceptedQps": 162.29691685358546,
+    "businessRejects": 0,
+    "rejectReasons": {},
+    "httpErrors": 0,
+    "errorReasons": {},
+    "meanMs": 196.13526363333267,
+    "p50Ms": 195.789300000004,
+    "p95Ms": 205.60000000000582,
+    "p99Ms": 232.96199999999953,
+    "mode": "sync",
+    "round": 2,
+    "drainMs": 4.072699999989709,
+    "quiescenceMs": 17.578699999983655,
+    "timedOut": false,
+    "audit": {
+      "voucherId": 902032,
+      "orders": 3000,
+      "distinctUsers": 3000,
+      "duplicateUsers": 0,
+      "mysqlStock": 0,
+      "redisStock": 3000,
+      "reservedUsers": 0,
+      "streamPending": [
+        0,
+        null,
+        null,
+        null
+      ],
+      "streamGroups": [
+        [
+          "name",
+          "g1",
+          "consumers",
+          1,
+          "pending",
+          0,
+          "last-delivered-id",
+          "1794997012147-1",
+          "entries-read",
+          36500,
+          "lag",
+          0
+        ]
+      ],
+      "queues": [
+        {
+          "name": "hmdp.orders",
+          "messages": 0,
+          "ready": 0,
+          "unacked": 0,
+          "acked": 0,
+          "delivered": 0
+        },
+        {
+          "name": "hmdp.orders.dlq",
+          "messages": 0,
+          "ready": 0,
+          "unacked": 0,
+          "acked": 0,
+          "delivered": 0
+        }
+      ]
+    },
+    "observation": "SQL completion checked at 100ms polling intervals; durableQps is observed lower bound",
+    "durableQps": 162.26116603188854,
+    "consistent": true
+  },
+  {
+    "name": "sync-r2-c128",
+    "startedAt": "2026-11-18T10:21:56.634Z",
+    "count": 3000,
+    "concurrency": 128,
+    "users": 3000,
+    "durationMs": 18552.341799999995,
+    "requestQps": 161.70465337157603,
+    "accepted": 3000,
+    "acceptedQps": 161.70465337157603,
+    "businessRejects": 0,
+    "rejectReasons": {},
+    "httpErrors": 0,
+    "errorReasons": {},
+    "meanMs": 774.3754522333327,
+    "p50Ms": 786.4554000000062,
+    "p95Ms": 820.7232000000076,
+    "p99Ms": 836.1478999999817,
+    "mode": "sync",
+    "round": 2,
+    "drainMs": 4.1925999999803025,
+    "quiescenceMs": 17.54979999997886,
+    "timedOut": false,
+    "audit": {
+      "voucherId": 902128,
+      "orders": 3000,
+      "distinctUsers": 3000,
+      "duplicateUsers": 0,
+      "mysqlStock": 0,
+      "redisStock": 3000,
+      "reservedUsers": 0,
+      "streamPending": [
+        0,
+        null,
+        null,
+        null
+      ],
+      "streamGroups": [
+        [
+          "name",
+          "g1",
+          "consumers",
+          1,
+          "pending",
+          0,
+          "last-delivered-id",
+          "1794997012147-1",
+          "entries-read",
+          36500,
+          "lag",
+          0
+        ]
+      ],
+      "queues": [
+        {
+          "name": "hmdp.orders",
+          "messages": 0,
+          "ready": 0,
+          "unacked": 0,
+          "acked": 0,
+          "delivered": 0
+        },
+        {
+          "name": "hmdp.orders.dlq",
+          "messages": 0,
+          "ready": 0,
+          "unacked": 0,
+          "acked": 0,
+          "delivered": 0
+        }
+      ]
+    },
+    "observation": "SQL completion checked at 100ms polling intervals; durableQps is observed lower bound",
+    "durableQps": 161.66811837451738,
+    "consistent": true
+  },
+  {
+    "name": "sync-r2-c256",
+    "startedAt": "2026-11-18T10:22:15.243Z",
+    "count": 3000,
+    "concurrency": 256,
+    "users": 3000,
+    "durationMs": 18592.365500000014,
+    "requestQps": 161.35655250538173,
+    "accepted": 3000,
+    "acceptedQps": 161.35655250538173,
+    "businessRejects": 0,
+    "rejectReasons": {},
+    "httpErrors": 0,
+    "errorReasons": {},
+    "meanMs": 1518.241095866669,
+    "p50Ms": 1572.075199999992,
+    "p95Ms": 1627.9740000000165,
+    "p99Ms": 1637.137000000017,
+    "mode": "sync",
+    "round": 2,
+    "drainMs": 4.79759999999078,
+    "quiescenceMs": 20.2725999999966,
+    "timedOut": false,
+    "audit": {
+      "voucherId": 902256,
+      "orders": 3000,
+      "distinctUsers": 3000,
+      "duplicateUsers": 0,
+      "mysqlStock": 0,
+      "redisStock": 3000,
+      "reservedUsers": 0,
+      "streamPending": [
+        0,
+        null,
+        null,
+        null
+      ],
+      "streamGroups": [
+        [
+          "name",
+          "g1",
+          "consumers",
+          1,
+          "pending",
+          0,
+          "last-delivered-id",
+          "1794997012147-1",
+          "entries-read",
+          36500,
+          "lag",
+          0
+        ]
+      ],
+      "queues": [
+        {
+          "name": "hmdp.orders",
+          "messages": 0,
+          "ready": 0,
+          "unacked": 0,
+          "acked": 0,
+          "delivered": 0
+        },
+        {
+          "name": "hmdp.orders.dlq",
+          "messages": 0,
+          "ready": 0,
+          "unacked": 0,
+          "acked": 0,
+          "delivered": 0
+        }
+      ]
+    },
+    "observation": "SQL completion checked at 100ms polling intervals; durableQps is observed lower bound",
+    "durableQps": 161.31492657608615,
+    "consistent": true
+  },
+  {
+    "name": "sync-r3-c1",
+    "startedAt": "2026-11-18T10:22:33.906Z",
+    "count": 3000,
+    "concurrency": 1,
+    "users": 3000,
+    "durationMs": 43029.15220000001,
+    "requestQps": 69.72017450067257,
+    "accepted": 3000,
+    "acceptedQps": 69.72017450067257,
+    "businessRejects": 0,
+    "rejectReasons": {},
+    "httpErrors": 0,
+    "errorReasons": {},
+    "meanMs": 14.312457333333237,
+    "p50Ms": 14.17349999997532,
+    "p95Ms": 16.097299999993993,
+    "p99Ms": 17.6644999999844,
+    "mode": "sync",
+    "round": 3,
+    "drainMs": 4.011800000007497,
+    "quiescenceMs": 17.676399999996647,
+    "timedOut": false,
+    "audit": {
+      "voucherId": 903001,
+      "orders": 3000,
+      "distinctUsers": 3000,
+      "duplicateUsers": 0,
+      "mysqlStock": 0,
+      "redisStock": 3000,
+      "reservedUsers": 0,
+      "streamPending": [
+        0,
+        null,
+        null,
+        null
+      ],
+      "streamGroups": [
+        [
+          "name",
+          "g1",
+          "consumers",
+          1,
+          "pending",
+          0,
+          "last-delivered-id",
+          "1794997012147-1",
+          "entries-read",
+          36500,
+          "lag",
+          0
+        ]
+      ],
+      "queues": [
+        {
+          "name": "hmdp.orders",
+          "messages": 0,
+          "ready": 0,
+          "unacked": 0,
+          "acked": 0,
+          "delivered": 0
+        },
+        {
+          "name": "hmdp.orders.dlq",
+          "messages": 0,
+          "ready": 0,
+          "unacked": 0,
+          "acked": 0,
+          "delivered": 0
+        }
+      ]
+    },
+    "observation": "SQL completion checked at 100ms polling intervals; durableQps is observed lower bound",
+    "durableQps": 69.71367478347626,
+    "consistent": true
+  },
+  {
+    "name": "sync-r3-c32",
+    "startedAt": "2026-11-18T10:23:16.987Z",
+    "count": 3000,
+    "concurrency": 32,
+    "users": 3000,
+    "durationMs": 18614.718899999978,
+    "requestQps": 161.16278822776118,
+    "accepted": 3000,
+    "acceptedQps": 161.16278822776118,
+    "businessRejects": 0,
+    "rejectReasons": {},
+    "httpErrors": 0,
+    "errorReasons": {},
+    "meanMs": 197.56662530000025,
+    "p50Ms": 196.19270000001416,
+    "p95Ms": 218.81669999999576,
+    "p99Ms": 229.47920000000158,
+    "mode": "sync",
+    "round": 3,
+    "drainMs": 3.8601999999955297,
+    "quiescenceMs": 16.885100000014063,
+    "timedOut": false,
+    "audit": {
+      "voucherId": 903032,
+      "orders": 3000,
+      "distinctUsers": 3000,
+      "duplicateUsers": 0,
+      "mysqlStock": 0,
+      "redisStock": 3000,
+      "reservedUsers": 0,
+      "streamPending": [
+        0,
+        null,
+        null,
+        null
+      ],
+      "streamGroups": [
+        [
+          "name",
+          "g1",
+          "consumers",
+          1,
+          "pending",
+          0,
+          "last-delivered-id",
+          "1794997012147-1",
+          "entries-read",
+          36500,
+          "lag",
+          0
+        ]
+      ],
+      "queues": [
+        {
+          "name": "hmdp.orders",
+          "messages": 0,
+          "ready": 0,
+          "unacked": 0,
+          "acked": 0,
+          "delivered": 0
+        },
+        {
+          "name": "hmdp.orders.dlq",
+          "messages": 0,
+          "ready": 0,
+          "unacked": 0,
+          "acked": 0,
+          "delivered": 0
+        }
+      ]
+    },
+    "observation": "SQL completion checked at 100ms polling intervals; durableQps is observed lower bound",
+    "durableQps": 161.12937426035933,
+    "consistent": true
+  },
+  {
+    "name": "sync-r3-c128",
+    "startedAt": "2026-11-18T10:23:35.655Z",
+    "count": 3000,
+    "concurrency": 128,
+    "users": 3000,
+    "durationMs": 18478.547499999986,
+    "requestQps": 162.3504228349118,
+    "accepted": 3000,
+    "acceptedQps": 162.3504228349118,
+    "businessRejects": 0,
+    "rejectReasons": {},
+    "httpErrors": 0,
+    "errorReasons": {},
+    "meanMs": 771.8364482333326,
+    "p50Ms": 783.165399999998,
+    "p95Ms": 820.3099999999977,
+    "p99Ms": 829.6034000000218,
+    "mode": "sync",
+    "round": 3,
+    "drainMs": 4.8025999999954365,
+    "quiescenceMs": 17.89269999996759,
+    "timedOut": false,
+    "audit": {
+      "voucherId": 903128,
+      "orders": 3000,
+      "distinctUsers": 3000,
+      "duplicateUsers": 0,
+      "mysqlStock": 0,
+      "redisStock": 3000,
+      "reservedUsers": 0,
+      "streamPending": [
+        0,
+        null,
+        null,
+        null
+      ],
+      "streamGroups": [
+        [
+          "name",
+          "g1",
+          "consumers",
+          1,
+          "pending",
+          0,
+          "last-delivered-id",
+          "1794997012147-1",
+          "entries-read",
+          36500,
+          "lag",
+          0
+        ]
+      ],
+      "queues": [
+        {
+          "name": "hmdp.orders",
+          "messages": 0,
+          "ready": 0,
+          "unacked": 0,
+          "acked": 0,
+          "delivered": 0
+        },
+        {
+          "name": "hmdp.orders.dlq",
+          "messages": 0,
+          "ready": 0,
+          "unacked": 0,
+          "acked": 0,
+          "delivered": 0
+        }
+      ]
+    },
+    "observation": "SQL completion checked at 100ms polling intervals; durableQps is observed lower bound",
+    "durableQps": 162.3082386996502,
+    "consistent": true
+  },
+  {
+    "name": "sync-r3-c256",
+    "startedAt": "2026-11-18T10:23:54.191Z",
+    "count": 3000,
+    "concurrency": 256,
+    "users": 3000,
+    "durationMs": 19126.95020000002,
+    "requestQps": 156.8467512400381,
+    "accepted": 3000,
+    "acceptedQps": 156.8467512400381,
+    "businessRejects": 0,
+    "rejectReasons": {},
+    "httpErrors": 0,
+    "errorReasons": {},
+    "meanMs": 1561.4655935333276,
+    "p50Ms": 1623.6167999999598,
+    "p95Ms": 1655.283000000054,
+    "p99Ms": 1660.1852999999537,
+    "mode": "sync",
+    "round": 3,
+    "drainMs": 5.009100000024773,
+    "quiescenceMs": 20.379000000015367,
+    "timedOut": false,
+    "audit": {
+      "voucherId": 903256,
+      "orders": 3000,
+      "distinctUsers": 3000,
+      "duplicateUsers": 0,
+      "mysqlStock": 0,
+      "redisStock": 3000,
+      "reservedUsers": 0,
+      "streamPending": [
+        0,
+        null,
+        null,
+        null
+      ],
+      "streamGroups": [
+        [
+          "name",
+          "g1",
+          "consumers",
+          1,
+          "pending",
+          0,
+          "last-delivered-id",
+          "1794997012147-1",
+          "entries-read",
+          36500,
+          "lag",
+          0
+        ]
+      ],
+      "queues": [
+        {
+          "name": "hmdp.orders",
+          "messages": 0,
+          "ready": 0,
+          "unacked": 0,
+          "acked": 0,
+          "delivered": 0
+        },
+        {
+          "name": "hmdp.orders.dlq",
+          "messages": 0,
+          "ready": 0,
+          "unacked": 0,
+          "acked": 0,
+          "delivered": 0
+        }
+      ]
+    },
+    "observation": "SQL completion checked at 100ms polling intervals; durableQps is observed lower bound",
+    "durableQps": 156.8056858661618,
+    "consistent": true
+  }
+]

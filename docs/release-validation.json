@@ -1,0 +1,280 @@
+{
+  "at": "2026-11-18T14:49:28.569Z",
+  "checks": [
+    {
+      "name": "cold-and-negative-cache",
+      "pass": true,
+      "evidence": {
+        "shop": {
+          "latencyMs": 122.30790000000002,
+          "status": 200,
+          "success": true,
+          "error": null
+        },
+        "absent": {
+          "latencyMs": 25.045299999999997,
+          "status": 200,
+          "success": false,
+          "error": "店铺不存在"
+        }
+      }
+    },
+    {
+      "name": "finite-stock",
+      "pass": true,
+      "evidence": {
+        "load": {
+          "name": "finite",
+          "startedAt": "2026-11-18T14:49:23.753Z",
+          "count": 600,
+          "concurrency": 128,
+          "users": 600,
+          "durationMs": 468.5084999999999,
+          "requestQps": 1280.6597959268618,
+          "accepted": 100,
+          "acceptedQps": 213.44329932114363,
+          "businessRejects": 500,
+          "rejectReasons": {
+            "库存不足": 500
+          },
+          "httpErrors": 0,
+          "errorReasons": {},
+          "meanMs": 94.38959533333338,
+          "p50Ms": 79.25759999999991,
+          "p95Ms": 185.43870000000004,
+          "p99Ms": 237.85309999999993
+        },
+        "drainMs": 2616.4973,
+        "quiescenceMs": 2627.2057999999997,
+        "timedOut": false,
+        "audit": {
+          "voucherId": 995001,
+          "orders": 100,
+          "distinctUsers": 100,
+          "duplicateUsers": 0,
+          "mysqlStock": 0,
+          "redisStock": 0,
+          "reservedUsers": 100,
+          "streamPending": [
+            0,
+            null,
+            null,
+            null
+          ],
+          "streamGroups": [
+            [
+              "name",
+              "g1",
+              "consumers",
+              1,
+              "pending",
+              0,
+              "last-delivered-id",
+              "1795013363929-6",
+              "entries-read",
+              100,
+              "lag",
+              0
+            ]
+          ],
+          "queues": []
+        },
+        "observation": "SQL completion checked at 100ms polling intervals; durableQps is observed lower bound"
+      }
+    },
+    {
+      "name": "one-person-one-order",
+      "pass": true,
+      "evidence": {
+        "load": {
+          "name": "same-user",
+          "startedAt": "2026-11-18T14:49:26.887Z",
+          "count": 500,
+          "concurrency": 128,
+          "users": 1,
+          "durationMs": 314.43600000000015,
+          "requestQps": 1590.1487107074245,
+          "accepted": 1,
+          "acceptedQps": 3.180297421414849,
+          "businessRejects": 499,
+          "rejectReasons": {
+            "禁止重复下单": 499
+          },
+          "httpErrors": 0,
+          "errorReasons": {},
+          "meanMs": 78.05511879999997,
+          "p50Ms": 64.35530000000017,
+          "p95Ms": 174.76549999999952,
+          "p99Ms": 187.98340000000007
+        },
+        "drainMs": 2.9601000000002387,
+        "quiescenceMs": 10.275500000000648,
+        "timedOut": false,
+        "audit": {
+          "voucherId": 995002,
+          "orders": 1,
+          "distinctUsers": 1,
+          "duplicateUsers": 0,
+          "mysqlStock": 199,
+          "redisStock": 199,
+          "reservedUsers": 1,
+          "streamPending": [
+            0,
+            null,
+            null,
+            null
+          ],
+          "streamGroups": [
+            [
+              "name",
+              "g1",
+              "consumers",
+              1,
+              "pending",
+              0,
+              "last-delivered-id",
+              "1795013366965-0",
+              "entries-read",
+              101,
+              "lag",
+              0
+            ]
+          ],
+          "queues": []
+        },
+        "observation": "SQL completion checked at 100ms polling intervals; durableQps is observed lower bound"
+      }
+    },
+    {
+      "name": "duplicate-delivery",
+      "pass": true,
+      "evidence": {
+        "published": 40,
+        "audit": {
+          "voucherId": 995002,
+          "orders": 1,
+          "distinctUsers": 1,
+          "duplicateUsers": 0,
+          "mysqlStock": 199,
+          "redisStock": 199,
+          "reservedUsers": 1,
+          "streamPending": [
+            0,
+            null,
+            null,
+            null
+          ],
+          "streamGroups": [
+            [
+              "name",
+              "g1",
+              "consumers",
+              1,
+              "pending",
+              0,
+              "last-delivered-id",
+              "1795013367275-0",
+              "entries-read",
+              141,
+              "lag",
+              0
+            ]
+          ],
+          "queues": []
+        }
+      }
+    },
+    {
+      "name": "failed-consumer-keeps-pending",
+      "pass": true,
+      "evidence": {
+        "request": {
+          "latencyMs": 12.997000000000298,
+          "status": 200,
+          "success": true,
+          "error": null,
+          "orderId": "661626685312992333"
+        },
+        "audit": {
+          "voucherId": 995003,
+          "orders": 0,
+          "distinctUsers": 0,
+          "duplicateUsers": 0,
+          "mysqlStock": 0,
+          "redisStock": 0,
+          "reservedUsers": 1,
+          "streamPending": [
+            1,
+            "1795013367818-0",
+            "1795013367818-0",
+            [
+              [
+                "c1",
+                "1"
+              ]
+            ]
+          ],
+          "streamGroups": [
+            [
+              "name",
+              "g1",
+              "consumers",
+              1,
+              "pending",
+              1,
+              "last-delivered-id",
+              "1795013367818-0",
+              "entries-read",
+              142,
+              "lag",
+              0
+            ]
+          ],
+          "queues": []
+        }
+      }
+    },
+    {
+      "name": "pending-retry-after-repair",
+      "pass": true,
+      "evidence": {
+        "drainMs": 219.6862000000001,
+        "quiescenceMs": 225.86179999999968,
+        "timedOut": false,
+        "audit": {
+          "voucherId": 995003,
+          "orders": 1,
+          "distinctUsers": 1,
+          "duplicateUsers": 0,
+          "mysqlStock": 0,
+          "redisStock": 0,
+          "reservedUsers": 1,
+          "streamPending": [
+            0,
+            null,
+            null,
+            null
+          ],
+          "streamGroups": [
+            [
+              "name",
+              "g1",
+              "consumers",
+              1,
+              "pending",
+              0,
+              "last-delivered-id",
+              "1795013367818-0",
+              "entries-read",
+              142,
+              "lag",
+              0
+            ]
+          ],
+          "queues": []
+        },
+        "observation": "SQL completion checked at 100ms polling intervals; durableQps is observed lower bound"
+      }
+    }
+  ]
+}

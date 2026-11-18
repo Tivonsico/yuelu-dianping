@@ -1,0 +1,98 @@
+[
+  {
+    "name": "stream-r1-c1",
+    "accepted": 3000,
+    "persisted": 3000,
+    "distinctAcceptedIds": 3000,
+    "mismatches": 0,
+    "pass": true
+  },
+  {
+    "name": "stream-r1-c32",
+    "accepted": 3000,
+    "persisted": 3000,
+    "distinctAcceptedIds": 3000,
+    "mismatches": 0,
+    "pass": true
+  },
+  {
+    "name": "stream-r1-c128",
+    "accepted": 3000,
+    "persisted": 3000,
+    "distinctAcceptedIds": 3000,
+    "mismatches": 0,
+    "pass": true
+  },
+  {
+    "name": "stream-r1-c256",
+    "accepted": 3000,
+    "persisted": 3000,
+    "distinctAcceptedIds": 3000,
+    "mismatches": 0,
+    "pass": true
+  },
+  {
+    "name": "stream-r2-c1",
+    "accepted": 3000,
+    "persisted": 3000,
+    "distinctAcceptedIds": 3000,
+    "mismatches": 0,
+    "pass": true
+  },
+  {
+    "name": "stream-r2-c32",
+    "accepted": 3000,
+    "persisted": 3000,
+    "distinctAcceptedIds": 3000,
+    "mismatches": 0,
+    "pass": true
+  },
+  {
+    "name": "stream-r2-c128",
+    "accepted": 3000,
+    "persisted": 3000,
+    "distinctAcceptedIds": 3000,
+    "mismatches": 0,
+    "pass": true
+  },
+  {
+    "name": "stream-r2-c256",
+    "accepted": 3000,
+    "persisted": 3000,
+    "distinctAcceptedIds": 3000,
+    "mismatches": 0,
+    "pass": true
+  },
+  {
+    "name": "stream-r3-c1",
+    "accepted": 3000,
+    "persisted": 3000,
+    "distinctAcceptedIds": 3000,
+    "mismatches": 0,
+    "pass": true
+  },
+  {
+    "name": "stream-r3-c32",
+    "accepted": 3000,
+    "persisted": 3000,
+    "distinctAcceptedIds": 3000,
+    "mismatches": 0,
+    "pass": true
+  },
+  {
+    "name": "stream-r3-c128",
+    "accepted": 3000,
+    "persisted": 3000,
+    "distinctAcceptedIds": 3000,
+    "mismatches": 0,
+    "pass": true
+  },
+  {
+    "name": "stream-r3-c256",
+    "accepted": 3000,
+    "persisted": 3000,
+    "distinctAcceptedIds": 3000,
+    "mismatches": 0,
+    "pass": true
+  }
+]

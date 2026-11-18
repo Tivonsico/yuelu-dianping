@@ -1,0 +1,31 @@
+name: tianfang-dianping
+services:
+  mysql:
+    image: mysql:8@sha256:85b9bf2e29cf836ecb8c2a15a935d4ba0c606631dff1dd79531a11983c638f2a
+    ports: ["127.0.0.1:23316:3306"]
+    environment:
+      MYSQL_ROOT_PASSWORD: hmdp-root-test
+      MYSQL_DATABASE: hmdp_bench
+      MYSQL_USER: hmdp
+      MYSQL_PASSWORD: hmdp-test
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./db/schema.sql:/docker-entrypoint-initdb.d/001-schema.sql:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-uroot", "-phmdp-root-test"]
+      interval: 3s
+      timeout: 3s
+      retries: 40
+  redis:
+    image: redis:7.4-alpine@sha256:7f7d30b7fdd09467bac58198a1f166dd69789d348d4fe859cccb20e0cf287fbe
+    command: ["redis-server", "--appendonly", "yes", "--appendfsync", "everysec", "--requirepass", "hmdp-test"]
+    ports: ["127.0.0.1:26389:6379"]
+    volumes: ["redis-data:/data"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "-a", "hmdp-test", "ping"]
+      interval: 3s
+      timeout: 3s
+      retries: 40
+volumes:
+  mysql-data:
+  redis-data:
