@@ -1,6 +1,6 @@
-# 天方点评 Tianfang Dianping
+# 岳麓点评 Yuelu Dianping
 
-基于黑马点评课程参考实现改造的本地生活平台后端。练习商户缓存、Redis 登录鉴权、优惠券秒杀与社交 Feed，并保留可核查的测试数据。
+面向湖南长沙岳麓区的本地生活点评服务后端，基于黑马点评课程参考实现改造。练习商户缓存、Redis 登录鉴权、优惠券秒杀与社交 Feed，并保留可核查的测试数据。
 
 **技术栈：** Java · Spring Boot · MySQL · Redis · Redisson · Redis Stream
 

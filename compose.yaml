@@ -1,4 +1,4 @@
-name: tianfang-dianping
+name: yuelu-dianping
 services:
   mysql:
     image: mysql:8@sha256:85b9bf2e29cf836ecb8c2a15a935d4ba0c606631dff1dd79531a11983c638f2a
